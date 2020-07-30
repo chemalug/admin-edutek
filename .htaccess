@@ -1,0 +1,31 @@
+### 
+# Removes access to the system folder by users. 
+# Additionally this will allow you to create a System.php controller, 
+# previously this would not have been possible. 
+# 'system' can be replaced if you have renamed your system folder. 
+
+#RewriteCond %{REQUEST_URI} ^system.* 
+#RewriteRule ^(.*)$ /index.php/$1 [L] 
+ 
+# Checks to see if the user is attempting to access a valid file, 
+# such as an image or css document, if this isn't true it sends the 
+# request to index.php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond $1 !^(index\.php|images|robots\.txt|css|docs|js|system)
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+
+    ErrorDocument 404 /index.php
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php71” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
