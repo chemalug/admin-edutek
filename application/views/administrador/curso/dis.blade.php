@@ -9,7 +9,7 @@
         <div class="card">
             <div class="card-body text-white">
                 <h4 class="card-title text-center">Editar curso</h4>
-                <h6 class="card-title text-center">Intecap E-learning</h6>
+                <h6 class="card-title text-center">Edutek E-learning</h6>
                 {{ form_open_multipart('curso/editaction') }}
                     <form class="form p-t-20">
                         <div class="form-group">

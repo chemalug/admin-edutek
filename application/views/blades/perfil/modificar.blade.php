@@ -43,7 +43,7 @@
                             <input type="file" class="custom-file-input" id="archivo" name="archivo" accept="image/x-png,image/gif,image/jpeg" value="">
                                 <label class="custom-file-label form-control" for="imagen" aria-describedby="imagen">Seleccione un archivo</label>
                               </div></td></h4></tr>
-                            <h4 class=""> <td><input type="submit"  class = "btn btn-success" value="Actualizar cambios"> <input type="button" class ="btn btn-success" onclick="location.href='https://e-learning.intecap.tech';" value="Finalizar la edición" /></td> <td></td></h4></tr>
+                            <h4 class=""> <td><input type="submit"  class = "btn btn-success" value="Actualizar cambios"> <input type="button" class ="btn btn-success" onclick="location.href='https://elearning.edutek.org';" value="Finalizar la edición" /></td> <td></td></h4></tr>
                             <div class="ml-auto"><td></td>
                                  
                             </div>

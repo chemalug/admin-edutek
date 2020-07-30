@@ -10,8 +10,8 @@
 
 <div class="card">
     <div class="card-body">
-        <h4 class="card-title">Intecap E-learning</h4>
-        <h6 class="card-subtitle">Construir de Eventos <code>INTECAP | TICS</code></h6>
+        <h4 class="card-title">Edutek E-learning</h4>
+        <h6 class="card-subtitle">Construir de Eventos <code>Edutek</code></h6>
         <div class="table-responsive">
             <table class="table full-color-table full-inverse-table hover-table" id="table_principal">
                 <thead>

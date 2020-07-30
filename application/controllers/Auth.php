@@ -17,9 +17,9 @@ class Auth extends CI_Controller
 		//------------copiar esto
 		$config = array(
 			'protocol' => 'smtp',
-			'smtp_host' => 'ssl://mail.intecap.tech',
+			'smtp_host' => 'ssl://mail.edutek.org',
 			'smtp_port' => 465,
-			'smtp_user' => 'elearning@intecap.tech',
+			'smtp_user' => 'elearning@edutek.org',
 			'smtp_pass' => 'Hola1234#',
 			'mailtype'  => 'html',
 			'charset' => 'utf-8',
@@ -368,7 +368,7 @@ class Auth extends CI_Controller
 	//-----------------------------------funcion de envio de emails
 	public function enviar_email($asunto, $email, $mensaje)
 	{
-		$this->email->from('elearning.tics@intecap.edu.gt', 'Elearning INTECAP Centro Tics');
+		$this->email->from('elearning.tics@edutek.org', 'Elearning Edutek');
 		$this->email->to($email);
 		//$this->data['curso'] = 'Excel basico';
 		$this->data['titulo'] = $asunto;

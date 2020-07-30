@@ -52,7 +52,7 @@ if($flag == 1){
                             <br>
                             
                             
-                            <h4 class=""> <td> <input type="button" class ="btn btn-success" onclick="location.href='https://e-learning.intecap.tech';" value="ir a Inicio" /></td> </h4></tr>
+                            <h4 class=""> <td> <input type="button" class ="btn btn-success" onclick="location.href='https://elearning.edutek.org';" value="ir a Inicio" /></td> </h4></tr>
                        
                             <br/>        
                             </table>

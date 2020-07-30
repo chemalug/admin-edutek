@@ -49,11 +49,11 @@ if($flag == 1){
                     <div class="card-body">
                         <form action="" method = "POST">
                         <center class=""><h1> Se ha restaurado la Contraseña</h1><p>Se ha restaurado al participante la contraseña a "12345678", envie un correo indicando que su usuario es
-                        su correo electronico, su password 12345678 y el acceso a travez de wwww.e-learning.intecap.tech<p>
+                        su correo electronico, su password 12345678 y el acceso a travez de wwww.elearning.edutek.org<p>
                             <br>
                             
                             
-                            <h4 class=""> <td> <input type="button" class ="btn btn-success" onclick="location.href='https://e-learning.intecap.tech';" value="ir a Inicio" /></td> </h4></tr>
+                            <h4 class=""> <td> <input type="button" class ="btn btn-success" onclick="location.href='https://elearning.edutek.org';" value="ir a Inicio" /></td> </h4></tr>
                        
                             <br/>        
                             </table>

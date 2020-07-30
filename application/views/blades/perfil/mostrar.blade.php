@@ -37,7 +37,7 @@
                             <h4 class=""> <tr><td width="30%">Nombres:</td><td>{{$nombres}}</td></tr><tr><td>Apellidos</td><td> {{$apellidos}}</td></tr> </h4>
                             <h4 class=""> <td>Correo electronico:</td> <td>{{$email}}</td></h4></tr>
                             <h4 class=""> <td>Telefono:</td> <td>{{$telefono}}</td></h4></tr>
-                            <h4 class=""> <td><button  class = "btn btn-success">Modificar </button> <input type="button" class ="btn btn-success" onclick="location.href='https://e-learning.intecap.tech';" value="Finalizar la edición" /></td> <td>Puedes cambiar tu teléfono y foto de perfil, por error en el nombre o correo comunicarse con su instructor.</td></h4></tr>
+                            <h4 class=""> <td><button  class = "btn btn-success">Modificar </button> <input type="button" class ="btn btn-success" onclick="location.href='https://elearning.edutek.org';" value="Finalizar la edición" /></td> <td>Puedes cambiar tu teléfono y foto de perfil, por error en el nombre o correo comunicarse con su instructor.</td></h4></tr>
                        
                             <br/>        
                             </table>

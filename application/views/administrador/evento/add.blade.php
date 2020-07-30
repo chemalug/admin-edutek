@@ -9,7 +9,7 @@
         <div class="card text-white">
             <div class="card-body">
                 <h2 class="card-title text-center text-megna">Agregar Eventos</h2>
-                <h4 class="card-title text-center">Intecap E-learning</h4>
+                <h4 class="card-title text-center">Edutek E-learning</h4>
                 {{ form_open('evento/addaction')}}
                     <form class="form p-t-20">
                         <div class="form-group">

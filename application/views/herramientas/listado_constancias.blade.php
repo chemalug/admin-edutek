@@ -36,7 +36,7 @@
                                 echo "</th><th>";
                                 echo $constancia->token;
                                 echo "</th><th>";
-                               echo  '<a href="https://intecap.tech/verificacion/verify/">validar</a>';
+                               echo  '<a href="https://elearning.edutek.org/verificacion/verify/">validar</a>';
                                 
                                     
                                    

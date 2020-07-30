@@ -10,9 +10,9 @@ class Profesor extends CI_Controller {
 		//------------copiar esto
 		$config = Array(
 			'protocol' => 'smtp',
-			'smtp_host' => 'ssl://mail.intecap.tech',
+			'smtp_host' => 'ssl://mail.edutek.org',
 			'smtp_port' => 465,
-			'smtp_user' => 'elearning@intecap.tech',
+			'smtp_user' => 'elearning@edutek.org',
 			'smtp_pass' => 'Hola1234#',
 			'mailtype'  => 'html', 
 			'charset' => 'utf-8',
@@ -25,8 +25,6 @@ class Profesor extends CI_Controller {
 	    	redirect('auth/login');
 	    }
 	}
-	//'smtp_user' => 'elearning.tics@intecap.edu.gt',
-	//'smtp_pass' => 'Intecap2019@',
 
 	public function index()	{
 		if (!$this->ion_auth->logged_in()) {
@@ -90,20 +88,6 @@ class Profesor extends CI_Controller {
 				$password, $datos['email_profesor'], array( 'first_name' => $datos['nombre_profesor'], 
 				'last_name' => $datos['apellido_profesor'],'active' => '1','carnet' => $datos['email_profesor'] ), array('2') );
 				$dato = model('profesor')->insert($datos);
-
-				/*$this->email->from('elearning.tics@intecap.edu.gt', 'Elearning INTECAP Centro Tics');
-				$this->email->to($email_profesor);
-				$this->data['email'] = $email_profesor;
-				$this->data['pass'] = $password;
-				$body = $this->load->view('/auth/email/send_pasword',$this->data,TRUE);
-				
-				$this->email->subject('Intecap CTI - Accesos a la plataforma Elearning');
-				$this->email->message($body);
-				if ($this->email->send()) {
-					echo "1";
-				} else {
-					echo '0';
-				}*/
 				$asunto = 'Ingreso a la plataforma';
 				$mensaje = 'Bienvenido a la plataforma, se te ha creado la cuenta con las siguientes credenciales <br>
 							<strong>Usuario:  </strong>' . $email_profesor .' <br>
@@ -136,13 +120,13 @@ class Profesor extends CI_Controller {
 		if (!$this->ion_auth->logged_in()) {
 			redirect('auth/login');
 		}
-		$this->email->from('elearning.tics@intecap.edu.gt', 'Elearning INTECAP Centro Tics');
+		$this->email->from('elearning.tics@edutek.org', 'Elearning Edutek');
 		$this->email->to($email);
 		$this->data['email'] = $email;
 		$this->data['pass'] = $password;
 		$body = $this->load->view('/auth/email/send_pasword',$this->data,TRUE);
 		
-		$this->email->subject('Intecap CTI - Accesos a la plataforma Elearning');
+		$this->email->subject('Edutek - Accesos a la plataforma Elearning');
 		$this->email->message($body);
 		if ($this->email->send()) {
 			//echo"Your email was sent successfully";
@@ -248,7 +232,7 @@ class Profesor extends CI_Controller {
 		if (!$this->ion_auth->logged_in()) {
 			redirect('auth/login');
 		}
-		$this->email->from('elearning.tics@intecap.edu.gt', 'Elearning INTECAP Centro Tics');
+		$this->email->from('elearning@edutek.org', 'Elearning Edutek');
 		$this->email->to($email);
 		//$this->data['curso'] = 'Excel basico';
 		$this->data['titulo'] = $asunto;

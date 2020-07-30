@@ -6,9 +6,9 @@ class Mailer extends CI_Controller {
 		parent::__construct();
 		/*$config = Array(
 			'protocol' => 'smtp',
-			'smtp_host' => 'ssl://mail.intecap.tech',
+			'smtp_host' => 'ssl://mail.edutek.org',
 			'smtp_port' => 465,
-			'smtp_user' => 'elearning@intecap.tech',
+			'smtp_user' => 'elearning@edutek.org',
 			'smtp_pass' => 'Hola1234#',
 			'mailtype'  => 'html', 
 			'charset' => 'utf-8',
@@ -18,12 +18,11 @@ class Mailer extends CI_Controller {
 		$this->email->initialize($config);*/
 	    
 	}
-	//'smtp_user' => 'elearning.tics@intecap.edu.gt',
-	//'smtp_pass' => 'Intecap2019@',
+	
 
 	public function index()	{
 	 echo 'hola';
-	$this->enviar_email('prueba de envio', 'jose.miranda@intecap.edu.gt', 'Esto es una prueba');
+	$this->enviar_email('prueba de envio', 'jose.miranda@encodely.dev', 'Esto es una prueba');
 	}
 	function probar() {
 		echo 'hola';
@@ -42,14 +41,14 @@ class Mailer extends CI_Controller {
 
 	//funcion de envio de emails
 	public function email ($email,$password) {
-		$this->email->from('elearning.tics@intecap.edu.gt', 'Elearning INTECAP Centro Tics');
+		$this->email->from('elearning@edutek.org', 'Elearning Edutek');
 		$this->email->to($email);
 		$this->data['curso'] = 'Excel basico';
 		$this->data['titulo'] = 'Recuperación de contraseña';
 		$this->data['mensaje'] = 'Esta es una prueba de recuperaciómn de contraseña';
 		$body = $this->load->view('/blades/password/email_template',$this->data,TRUE);
 		
-		$this->email->subject('Intecap CTI - Accesos a la plataforma Elearning');
+		$this->email->subject('Edutek - Accesos a la plataforma Elearning');
 		$this->email->message($body);
 		if ($this->email->send()) {
 			//echo"Your email was sent successfully";
@@ -117,7 +116,7 @@ class Mailer extends CI_Controller {
 
 	public function enviar_email($asunto, $email, $mensaje) {
 		echo 'hola';
-		$this->email->from('elearning.tics@intecap.edu.gt', 'Elearning INTECAP Centro Tics');
+		$this->email->from('elearning@edutek.org', 'Elearning Edutek');
 		$this->email->to($email);
 		//$this->data['curso'] = 'Excel basico';
 		$this->data['titulo'] = $asunto;

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="format-detection" content="telephone=no" /> <!-- disable auto telephone linking in iOS -->
-		<title>Acceso a plataforma Elearning - Intecap CTI</title>
+		<title>Acceso a plataforma Elearning - Edutek</title>
 		<style type="text/css">
 			/* RESET STYLES */
 			html { background-color:#E1E1E1; margin:0; padding:0; }
@@ -183,7 +183,7 @@
 															<table border="0" cellpadding="30" cellspacing="0" width="100%">
 																<tr>
 																	<td align="center" valign="top" class="textContent">
-																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Intecap - Elearning</h1>
+																		<h1 style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:35px;font-weight:normal;margin-bottom:5px;text-align:center;">Edutek - Elearning</h1>
 																		<h2 style="text-align:center;font-weight:normal;font-family:Helvetica,Arial,sans-serif;font-size:23px;margin-bottom:10px;color:#205478;line-height:135%;">Acceso a la plataforma</h2>
                                                                         
 																	</td>
@@ -238,7 +238,7 @@
                                                                                     <h3 mc:edit="header" style="color:#5F5F5F;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:left;">
                                                                                         Bienvenido a la plataforma</h3>
                                                                                     <div mc:edit="body" style="text-align:left;font-family:Helvetica,Arial,sans-serif;font-size:15px;margin-bottom:0;color:#5F5F5F;line-height:135%;">
-                                                                                        Se acaba de registrar tus datos para el acceso a la plataforma Elearning de Intecap Centro Tics.
+                                                                                        Se acaba de registrar tus datos para el acceso a la plataforma Elearning de Edutek.
 																						<p>Usuario: &emsp;&emsp; <code style="color:#E9398A;"><?php echo $email; ?></code><br>
                                                                                         Password: <code style="color:#E9398A;"><?php echo $pass; ?></code></p>
 																					</div>
@@ -316,7 +316,7 @@
 																	<td valign="top" bgcolor="#E1E1E1">
 
 																		<div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-																			<div>Copyright &#169; 2019 - <?php date('Y');?>  <a href="https://www.intecap.tech" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Intecap - CTI</span></a>. Todos&nbsp;los&nbsp;derechos&nbsp;reservados.</div>
+																			<div>Copyright &#169; 2019 - <?php date('Y');?>  <a href="https://www.edutek.org" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">Edutek</span></a>. Todos&nbsp;los&nbsp;derechos&nbsp;reservados.</div>
 																			<!--<div>If you do not want to receive emails from us, you can <a href="#" target="_blank" style="text-decoration:none;color:#828282;"><span style="color:#828282;">unsubscribe</span></a>.</div>-->
 																		</div>
 

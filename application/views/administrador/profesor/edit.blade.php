@@ -9,7 +9,7 @@
         <div class="card text-white">
             <div class="card-body">
                 <h2 class="card-title text-center text-megna">Editar Instructor</h2>
-                <h4 class="card-title text-center">Intecap E-learning</h4>
+                <h4 class="card-title text-center">Edutek E-learning</h4>
 
 
                 <div class="form-group">
@@ -43,7 +43,7 @@
                                 <i class="ti-email"></i>
                             </span>
                         </div>
-                        <input type="email" class="form-control" style="color:white;" name="email" id="email" placeholder="example@intecap.edu.gt" value="{{ $datos->email_instructor }}">
+                        <input type="email" class="form-control" style="color:white;" name="email" id="email" placeholder="example@edutek.org" value="{{ $datos->email_instructor }}">
                     </div>
                 </div>
                 <button id="btnGuardar" class="btn bg-megna waves-effect waves-light m-r-10" style="color:white">Guardar</button>
